@@ -145,11 +145,12 @@ def funcion_teo_refl_2l (t, ups2, ua2, t0):
      zb2 = 2.*A_factor*D2
      r_prime = radius+zb1
      #Arrays and other stuff
+     n = 2
      ti = 0.
-     Nt = 512
-     dt = 10
+     Nt = 1024*n
+     dt = 5
      tf = dt*Nt              #Final time in time array
-     Nsn = 200
+     Nsn = 1500
      t_arr = np.arange(ti,tf,dt)
      t = t_arr
      f_arr = np.fft.fftfreq(Nt,d=dt)
